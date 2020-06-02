@@ -1,0 +1,22 @@
+{
+  "name": "tbouk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node-sass -o src/assets/sass/main.scss src/assets/css/main.css",
+    "build": "node-sass --output-style compressed src/assets/sass/main.scss src/assets/css/main.css",
+    "watch": "node-sass --output-style --watch src/assets/sass/main.scss src/assets/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "popper.js": "^1.16.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

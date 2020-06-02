@@ -1,0 +1,56 @@
+
+//Template html body common class
+
+//$tboFont: ;
+//$tboFont: ;
+$tboColor: #F1F1F2;
+$titleColor: #999999;
+$hrColor: #e8e8e9;
+$imagebgColor: #E6E7E8;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  //font-family: ;
+  h1,h2,h3,h4,h5,h6{
+    //font-family: ;
+    margin: 0;
+    padding: 0;
+  }
+  p{
+    //font-family: ;
+    margin: 0;
+    padding: 0;
+  }
+  a{
+    //font-family: ;
+    display: block;
+    color: #000000;
+    text-decoration: none !important;
+    &:hover{
+      color: #000000;
+    }
+  }
+
+  img{
+    max-width: 100%;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      a {
+        display: block;
+        text-decoration: none;
+      }
+    }
+  }
+
+
+}
