@@ -1,0 +1,144 @@
+
+
+
+.footer-section{
+  .footer-newsletter-area{
+    padding-bottom: 40px;
+    h4{
+      font-size: 18px;
+    }
+    .hr{
+      border-bottom: 1px solid $hrColor;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      @media(max-width: 767px){
+        margin: 10px 100px;
+
+      }
+    }
+    .category-list{
+      li{
+        font-family: $tboFont;
+        line-height: 24px;
+        @media(max-width: 767px){
+          text-align: center;
+        }
+        a{
+          font-size: 14px;
+          color: #b7b7b7;
+        }
+        a:hover{
+          color: $logoColor;
+        }
+      }
+    }
+    .email-address{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 50px;
+      .form-control{
+        border-radius: 0;
+        width: 68%;
+        @media(max-width: 600px){
+          width: 53%;
+        }
+        @media(max-width: 576px){
+          width: 70%;
+        }
+      }
+      .form-control:focus{
+        border-color: $titleColor;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+      }
+      ::placeholder{
+        font-size: 14px;
+      }
+      ::-webkit-input-placeholder{
+        font-size: 14px;
+      }
+      ::-ms-input-placeholder{
+        font-size: 14px;
+      }
+      ::-moz-placeholder{
+        font-size: 14px;
+      }
+    }
+    .signup{
+      display: flex;
+      justify-content: center;
+      input[type='submit']{
+        font-size: 14px;
+        padding: 6px 60px;
+        border-radius: 0;
+        background: #000000;
+        color: $bgWhite;
+        border: 0;
+      }
+      input[type='submit']:hover{
+        background-color: $logoColor;
+      }
+    }
+  }
+
+  .footer-logo-bg{
+    background-color: $tboColor;
+    img{
+      width: 140px;
+      height: auto;
+    }
+  }
+
+  .footer-menu{
+    .copyright {
+      p{
+        font-size: 14px;
+        @media(max-width: 576px){
+          font-size: 12px;
+        }
+        .combosoft{
+          color: $logoColor !important;
+          font-weight: 600;
+        }
+      }
+    }
+    .menu-list{
+      li{
+        padding-right: 10px;
+        &:last-child{
+          padding-right: 0;
+        }
+        a{
+          font-size: 14px;
+          @media(max-width: 576px){
+            font-size: 12px;
+          }
+        }
+        a:hover{
+          color: $logoColor;
+        }
+      }
+    }
+  }
+
+  .payment-method{
+    background-color: #000000;
+    .payment-method-list{
+      li{
+        padding-right: 10px;
+        &:last-child{
+          padding-right: 0;
+        }
+        img{
+          width: 50px;
+          height: auto;
+        }
+      }
+      li:nth-child(2){
+        img{
+          width: 85px;
+        }
+      }
+    }
+  }
+}

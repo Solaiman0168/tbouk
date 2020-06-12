@@ -4,9 +4,9 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "start": "node-sass -o src/assets/sass/main.scss src/assets/css/main.css",
-    "build": "node-sass --output-style compressed src/assets/sass/main.scss src/assets/css/main.css",
-    "watch": "node-sass --output-style --watch src/assets/sass/main.scss src/assets/css/main.css"
+    "start": "node-sass -o assets/sass/main.scss assets/css/main.css",
+    "build": "node-sass --output-style compressed assets/sass/main.scss assets/css/main.css",
+    "watch": "node-sass --output-style --watch assets/sass/main.scss assets/css/main.css"
   },
   "keywords": [],
   "author": "",

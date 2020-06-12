@@ -1,0 +1,201 @@
+
+
+
+.men-sec{
+  background-color: $bgWhite;
+  position: relative;
+  .container{
+    .mens-col{
+      flex: 0 0 28%;
+      max-width: 28%;
+      @media(max-width: 800px){
+        flex: 0 0 27%;
+        max-width: 27%;
+      }
+      @media(max-width: 767px){
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .image-sec{
+        //transition: transform .6s;
+        font-size: 16px;
+        @media(max-width: 800px){
+          font-size: 14px;
+        }
+        @media(max-width: 767px){
+          padding: 0 45px;
+        }
+        //&:hover{
+        //  transform: scale(1.5);
+        //}
+      }
+    }
+    .mens-col-content{
+      flex: 0 0 16%;
+      max-width: 16%;
+      z-index: 9999;
+      @media(max-width: 800px){
+        flex: 0 0 19%;
+        max-width: 19%;
+      }
+      @media(max-width: 767px){
+        display: none;
+        //flex: 0 0 100%;
+        //max-width: 100%;
+      }
+      .video-btn{
+        position: absolute;
+        bottom: 635px;
+        left: -15px;
+        right: 50%;
+        padding: 25px;
+        border-radius: 50%;
+        border: 2px solid $tboColor;
+        @media(max-width: 1024px){
+          bottom: 580px;
+          left: -30px;
+        }
+        @media(max-width: 800px){
+          bottom: 435px;
+          right: 47%;
+          padding: 25px;
+        }
+        .img{
+          width: 40px;
+          height: auto;
+          margin-left: 12px;
+        }
+      }
+      .video-btn:before,
+      .video-btn:after{
+        content: '';
+        display: block;
+        position: absolute;
+        border: 1px solid $tboColor;
+        left: -10px;
+        right: -10px;
+        top: -10px;
+        bottom: -10px;
+        border-radius: 50%;
+        animation: animate 1.5s linear infinite;
+        -webkit-animation: animate 1.5s linear infinite;
+        -moz-animation: animate 1.5s linear infinite;
+        -o-animation: animate 1.5s linear infinite;
+        opacity: 0;
+      }
+      .video-btn:after{
+        animation-delay: .5s;
+        -webkit-animation-delay: .5s;
+        -moz-animation-delay: .5s;
+        -o-animation-delay: .5s;
+      }
+      @keyframes animate {
+        0%{
+          transform: scale(0.5);
+          -webkit-transform: scale(0.5);
+          -moz-transform: scale(0.5);
+          -o-transform: scale(0.5);
+          -ms-transform: scale(0.5);
+          opacity: 0;
+        }
+        50%{
+          transform: scale(1);
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -o-transform: scale(1);
+          -ms-transform: scale(1);
+          opacity: 1;
+        }
+        100%{
+          transform: scale(1.5);
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -o-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          opacity: 0;
+        }
+      }
+      .modal{
+        .modal-dialog{
+          max-width: 800px;
+          margin: 100px auto;
+          .modal-body{
+            position:relative;
+            padding:0px;
+            .close{
+              position:absolute;
+              right: -50px;
+              top:0;
+              z-index:999;
+              font-size:2rem;
+              font-weight: normal;
+              color:#fff;
+              opacity:1;
+            }
+          }
+        }
+      }
+      .video-title{
+        position: absolute;
+        bottom: 585px;
+        left: -10px;
+        width: 100px;
+        text-align: center;
+        font-size: 15px;
+        color: $tboColor;
+        @media(max-width: 1024px){
+          bottom: 525px;
+          left: -30px;
+        }
+        @media(max-width: 800px){
+          bottom: 385px;
+        }
+      }
+
+      .vl {
+        border-left: 2px solid $tboColor;
+        height: 630px;
+        left: 40px;
+        bottom: -50px;
+        position: absolute;
+        @media(max-width: 1024px){
+          height: 570px;
+          left: 20px;
+        }
+        @media(max-width: 800px){
+          height: 430px;;
+        }
+      }
+      .men-content{
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        position: absolute;
+        top: 140px;
+        left: 36px;
+        @media(max-width: 1024px){
+          left: -20px;
+          top: 110px;
+        }
+        h3{
+          font-size: 60px;
+          font-family: 'Helvetica-Compressed';
+          color: $imagebgColor;
+          @media(max-width: 700px){
+            font-size: 50px;
+          }
+        }
+        p{
+          font-size: 35px;
+          color: $imagebgColor;
+          @media(max-width: 800px){
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+  }
+}
